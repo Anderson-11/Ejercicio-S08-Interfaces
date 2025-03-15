@@ -13,6 +13,9 @@ import InterfazAnimal.Perro;
 import InterfazFiguraGeometrica.Circulo;
 import InterfazFiguraGeometrica.FiguraGeometrica;
 import InterfazFiguraGeometrica.Rectangulo;
+import InterfazNotificacion.CorreoElectronico;
+import InterfazNotificacion.Notificable;
+import InterfazNotificacion.SMS;
 import InterfazOrdenable.ListaNumeros;
 import InterfazPago.Pago;
 import InterfazPago.PagoConEfectivo;
@@ -105,6 +108,14 @@ public class EjercicioS08 {
         
         System.out.println();
         
+        // Interfaz Notificacion
+        Notificable correo = new CorreoElectronico();
+        correo.enviarNotificacion();
+        
+        Notificable sms = new SMS();
+        sms.enviarNotificacion();
+        
+        System.out.println();
         
     }
 }

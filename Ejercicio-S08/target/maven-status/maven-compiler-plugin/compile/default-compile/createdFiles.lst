@@ -1,13 +1,16 @@
 InterfazVehiculo\Coche.class
 InterfazFiguraGeometrica\Rectangulo.class
 com\mycompany\ejercicio\s08\EjercicioS08.class
+InterfazNotificacion\Notificable.class
 InterfazTrabajador\Desarrollador.class
 InterfazPago\Pago.class
+InterfazNotificacion\CorreoElectronico.class
 InterfazTrabajador\Diseñador.class
 InterfazPago\PagoConTarjeta.class
 InterfazFiguraGeometrica\FiguraGeometrica.class
 InterfazAlimentacion\Mascota.class
 InterfazOrdenable\Ordenable.class
+InterfazNotificacion\SMS.class
 InterfazOrdenable\ListaNumeros.class
 InterfazVehiculo\Vehiculo.class
 InterfazAlimentacion\Alimentacion.class
