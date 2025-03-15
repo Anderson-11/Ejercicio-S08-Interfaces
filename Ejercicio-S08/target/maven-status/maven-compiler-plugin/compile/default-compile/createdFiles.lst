@@ -6,10 +6,13 @@ InterfazPago\Pago.class
 InterfazTrabajador\Diseñador.class
 InterfazPago\PagoConTarjeta.class
 InterfazFiguraGeometrica\FiguraGeometrica.class
+InterfazAlimentacion\Mascota.class
 InterfazOrdenable\Ordenable.class
 InterfazOrdenable\ListaNumeros.class
 InterfazVehiculo\Vehiculo.class
+InterfazAlimentacion\Alimentacion.class
 InterfazAnimal\Animal.class
+InterfazAlimentacion\Persona.class
 InterfazPago\PagoConEfectivo.class
 InterfazAnimal\Gato.class
 InterfazTrabajador\Trabajador.class

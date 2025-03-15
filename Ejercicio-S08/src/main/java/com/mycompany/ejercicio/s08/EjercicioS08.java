@@ -4,6 +4,9 @@
 
 package com.mycompany.ejercicio.s08;
 
+import InterfazAlimentacion.Alimentacion;
+import InterfazAlimentacion.Mascota;
+import InterfazAlimentacion.Persona;
 import InterfazAnimal.Animal;
 import InterfazAnimal.Gato;
 import InterfazAnimal.Perro;
@@ -92,5 +95,16 @@ public class EjercicioS08 {
         lista.ordenar();
         
         System.out.println();
+        
+        // Interfaz Alimentacion
+        Alimentacion persona = new Persona();
+        persona.comer();
+        
+        Alimentacion mascota = new Mascota();
+        mascota.comer();
+        
+        System.out.println();
+        
+        
     }
 }
