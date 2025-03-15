@@ -13,6 +13,9 @@ import InterfazFiguraGeometrica.Rectangulo;
 import InterfazPago.Pago;
 import InterfazPago.PagoConEfectivo;
 import InterfazPago.PagoConTarjeta;
+import InterfazTrabajador.Desarrollador;
+import InterfazTrabajador.Diseñador;
+import InterfazTrabajador.Trabajador;
 import InterfazVehiculo.Bicicleta;
 import InterfazVehiculo.Coche;
 import InterfazVehiculo.Vehiculo;
@@ -61,5 +64,14 @@ public class EjercicioS08 {
         FiguraGeometrica rectangulo = new Rectangulo(4, 6);
         System.out.println("Area del rectangulo: " + rectangulo.area());
         System.out.println("Perimetro del rectangulo: " + rectangulo.perimetro());
+        
+        System.out.println();
+        
+        Trabajador desarrollador = new Desarrollador();
+        desarrollador.trabajar();
+        
+        Trabajador diseñador = new Diseñador();
+        diseñador.trabajar();
+        
     }
 }
