@@ -7,6 +7,9 @@ package com.mycompany.ejercicio.s08;
 import InterfazAnimal.Animal;
 import InterfazAnimal.Gato;
 import InterfazAnimal.Perro;
+import InterfazVehiculo.Bicicleta;
+import InterfazVehiculo.Coche;
+import InterfazVehiculo.Vehiculo;
 
 /**
  *
@@ -22,5 +25,13 @@ public class EjercicioS08 {
         Animal gato = new Gato();
         gato.hacerSonido();
         gato.mover();
+        
+        Vehiculo coche = new Coche();
+        coche.arrancar();
+        coche.detener();
+        
+        Vehiculo bicicleta = new Bicicleta();
+        bicicleta.arrancar();
+        bicicleta.detener();
     }
 }

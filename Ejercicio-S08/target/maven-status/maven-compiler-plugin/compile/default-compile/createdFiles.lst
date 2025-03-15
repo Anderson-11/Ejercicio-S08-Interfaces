@@ -1,4 +1,7 @@
+InterfazVehiculo\Coche.class
 com\mycompany\ejercicio\s08\EjercicioS08.class
 InterfazAnimal\Animal.class
-InterfazAnimal\Perro.class
 InterfazAnimal\Gato.class
+InterfazAnimal\Perro.class
+InterfazVehiculo\Vehiculo.class
+InterfazVehiculo\Bicicleta.class
