@@ -7,6 +7,9 @@ package com.mycompany.ejercicio.s08;
 import InterfazAnimal.Animal;
 import InterfazAnimal.Gato;
 import InterfazAnimal.Perro;
+import InterfazFiguraGeometrica.Circulo;
+import InterfazFiguraGeometrica.FiguraGeometrica;
+import InterfazFiguraGeometrica.Rectangulo;
 import InterfazPago.Pago;
 import InterfazPago.PagoConEfectivo;
 import InterfazPago.PagoConTarjeta;
@@ -29,6 +32,8 @@ public class EjercicioS08 {
         gato.hacerSonido();
         gato.mover();
         
+        System.out.println();
+        
         Vehiculo coche = new Coche();
         coche.arrancar();
         coche.detener();
@@ -45,5 +50,16 @@ public class EjercicioS08 {
 
         Pago pagoEfectivo = new PagoConEfectivo();
         pagoEfectivo.procesarPago(50.0);
+        
+        System.out.println();
+        
+        // Ejemplo de figura geométrica
+        FiguraGeometrica circulo = new Circulo(5);
+        System.out.println("Area del circulo: " + circulo.area());
+        System.out.println("Perimetro del circulo: " + circulo.perimetro());
+
+        FiguraGeometrica rectangulo = new Rectangulo(4, 6);
+        System.out.println("Area del rectangulo: " + rectangulo.area());
+        System.out.println("Perimetro del rectangulo: " + rectangulo.perimetro());
     }
 }

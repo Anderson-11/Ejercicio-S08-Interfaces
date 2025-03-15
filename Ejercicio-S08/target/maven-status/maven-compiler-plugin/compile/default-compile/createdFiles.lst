@@ -1,10 +1,13 @@
 InterfazVehiculo\Coche.class
+InterfazFiguraGeometrica\Rectangulo.class
 com\mycompany\ejercicio\s08\EjercicioS08.class
-InterfazAnimal\Animal.class
 InterfazPago\Pago.class
+InterfazPago\PagoConTarjeta.class
+InterfazFiguraGeometrica\FiguraGeometrica.class
+InterfazVehiculo\Vehiculo.class
+InterfazAnimal\Animal.class
 InterfazPago\PagoConEfectivo.class
 InterfazAnimal\Gato.class
-InterfazPago\PagoConTarjeta.class
 InterfazAnimal\Perro.class
-InterfazVehiculo\Vehiculo.class
+InterfazFiguraGeometrica\Circulo.class
 InterfazVehiculo\Bicicleta.class
