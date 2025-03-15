@@ -6,6 +6,8 @@ InterfazPago\Pago.class
 InterfazTrabajador\Diseñador.class
 InterfazPago\PagoConTarjeta.class
 InterfazFiguraGeometrica\FiguraGeometrica.class
+InterfazOrdenable\Ordenable.class
+InterfazOrdenable\ListaNumeros.class
 InterfazVehiculo\Vehiculo.class
 InterfazAnimal\Animal.class
 InterfazPago\PagoConEfectivo.class

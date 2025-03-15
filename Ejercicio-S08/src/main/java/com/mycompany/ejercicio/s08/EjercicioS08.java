@@ -10,6 +10,7 @@ import InterfazAnimal.Perro;
 import InterfazFiguraGeometrica.Circulo;
 import InterfazFiguraGeometrica.FiguraGeometrica;
 import InterfazFiguraGeometrica.Rectangulo;
+import InterfazOrdenable.ListaNumeros;
 import InterfazPago.Pago;
 import InterfazPago.PagoConEfectivo;
 import InterfazPago.PagoConTarjeta;
@@ -19,6 +20,8 @@ import InterfazTrabajador.Trabajador;
 import InterfazVehiculo.Bicicleta;
 import InterfazVehiculo.Coche;
 import InterfazVehiculo.Vehiculo;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -27,6 +30,7 @@ import InterfazVehiculo.Vehiculo;
 public class EjercicioS08 {
 
     public static void main(String[] args) {
+        //Intefaz Animale
         Animal perro = new Perro();
         perro.hacerSonido();
         perro.mover();
@@ -37,6 +41,7 @@ public class EjercicioS08 {
         
         System.out.println();
         
+        //Interfaz Vehiculo
         Vehiculo coche = new Coche();
         coche.arrancar();
         coche.detener();
@@ -47,7 +52,7 @@ public class EjercicioS08 {
         
         System.out.println();
         
-        // Ejemplo de pago
+        // Interfaz de pago
         Pago pagoTarjeta = new PagoConTarjeta();
         pagoTarjeta.procesarPago(100.0);
 
@@ -56,7 +61,7 @@ public class EjercicioS08 {
         
         System.out.println();
         
-        // Ejemplo de figura geométrica
+        // Interfaz de Figura Geometrica
         FiguraGeometrica circulo = new Circulo(5);
         System.out.println("Area del circulo: " + circulo.area());
         System.out.println("Perimetro del circulo: " + circulo.perimetro());
@@ -67,11 +72,25 @@ public class EjercicioS08 {
         
         System.out.println();
         
+        //Interfaz de trabajador
         Trabajador desarrollador = new Desarrollador();
         desarrollador.trabajar();
         
         Trabajador diseñador = new Diseñador();
         diseñador.trabajar();
         
+        System.out.println();
+        
+        //Interfaz de ordenable
+        List<Integer> numeros = new ArrayList();
+        numeros.add(111);
+        numeros.add(57);
+        numeros.add(22);
+        numeros.add(77);
+        numeros.add(11);
+        ListaNumeros lista= new ListaNumeros(numeros);
+        lista.ordenar();
+        
+        System.out.println();
     }
 }
