@@ -10,6 +10,9 @@ import InterfazAlimentacion.Persona;
 import InterfazAnimal.Animal;
 import InterfazAnimal.Gato;
 import InterfazAnimal.Perro;
+import InterfazCalcDescuento.Descontable;
+import InterfazCalcDescuento.DescuentoFijo;
+import InterfazCalcDescuento.DescuentoPorcentaje;
 import InterfazComparacionObjetos.Producto;
 import InterfazFiguraGeometrica.Circulo;
 import InterfazFiguraGeometrica.FiguraGeometrica;
@@ -141,6 +144,30 @@ public class EjercicioS08 {
         
         System.out.println();
         
+        // Interfaz de Calcular Descuento
+        // Precio original del producto
+        double precioOriginal = 100.0;
+
+        // Crear instancias de descuentos
+        Descontable descuentoPorcentaje = new DescuentoPorcentaje(20); // 20%
+        Descontable descuentoFijo = new DescuentoFijo(15); // $15
+
+        // Calcular descuentos
+        double descuentoPorcentajeValor = descuentoPorcentaje.calcularDescuento(precioOriginal);
+        double descuentoFijoValor = descuentoFijo.calcularDescuento(precioOriginal);
+
+        // Imprimir resultados
+        System.out.println("Precio Original: $" + precioOriginal);
+        System.out.println("Descuento por porcentaje (20%): $" + descuentoPorcentajeValor);
+        System.out.println("Descuento fijo ($15): $" + descuentoFijoValor);
+
+        // Calcular precios finales
+        double precioFinalConDescuentoPorcentaje = precioOriginal - descuentoPorcentajeValor;
+        double precioFinalConDescuentoFijo = precioOriginal - descuentoFijoValor;
+
+        System.out.println("Precio final con descuento por porcentaje: $" + precioFinalConDescuentoPorcentaje);
+        System.out.println("Precio final con descuento fijo: $" + precioFinalConDescuentoFijo);
         
+        System.out.println();
     }
 }

@@ -12,6 +12,7 @@ InterfazAnimal\Animal.class
 InterfazAlimentacion\Persona.class
 InterfazPago\PagoConEfectivo.class
 InterfazAnimal\Gato.class
+InterfazCalcDescuento\DescuentoFijo.class
 InterfazTrabajador\Trabajador.class
 InterfazFiguraGeometrica\Circulo.class
 InterfazVehiculo\Bicicleta.class
@@ -19,7 +20,9 @@ InterfazComparacionObjetos\ComparableObjeto.class
 InterfazVehiculo\Coche.class
 com\mycompany\ejercicio\s08\EjercicioS08.class
 InterfazPago\Pago.class
+InterfazCalcDescuento\DescuentoPorcentaje.class
 InterfazTrabajador\Diseñador.class
+InterfazCalcDescuento\Descontable.class
 InterfazPago\PagoConTarjeta.class
 InterfazFiguraGeometrica\FiguraGeometrica.class
 InterfazOrdenable\ListaNumeros.class
