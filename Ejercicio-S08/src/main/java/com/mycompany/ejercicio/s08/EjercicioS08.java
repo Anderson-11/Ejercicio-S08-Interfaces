@@ -10,6 +10,7 @@ import InterfazAlimentacion.Persona;
 import InterfazAnimal.Animal;
 import InterfazAnimal.Gato;
 import InterfazAnimal.Perro;
+import InterfazComparacionObjetos.Producto;
 import InterfazFiguraGeometrica.Circulo;
 import InterfazFiguraGeometrica.FiguraGeometrica;
 import InterfazFiguraGeometrica.Rectangulo;
@@ -116,6 +117,30 @@ public class EjercicioS08 {
         sms.enviarNotificacion();
         
         System.out.println();
+        
+        //Interfaz Comparacion de objetos
+        // Crear productos
+        Producto producto1 = new Producto(50.0);
+        Producto producto2 = new Producto(30.0);
+
+        // Comparar productos
+        int resultadoComparacion = producto1.comparar(producto2);
+
+        // Imprimir resultados de la comparación
+        if (resultadoComparacion > 0) {
+            System.out.println("Producto 1 es mas caro que Producto 2");
+        } else if (resultadoComparacion < 0) {
+            System.out.println("Producto 1 es mas barato que Producto 2");
+        } else {
+            System.out.println("Producto 1 y Producto 2 tienen el mismo precio");
+        }
+
+        // Imprimir los detalles de los productos
+        System.out.println("Detalles del Producto 1: " + producto1);
+        System.out.println("Detalles del Producto 2: " + producto2);
+        
+        System.out.println();
+        
         
     }
 }
